@@ -1,103 +1,84 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="description"
-        content="DiTalker: Fast and Expressive Audio-Driven Talking Face Generation with Dual
-        Diffusion Transformers">
-  <meta name="keywords" content="Nerfies, D-NeRF, NeRF">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>DiTalker</title>
-
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-L7749G0HJZ"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-L7749G0HJZ');
-</script>
-
-  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
-        rel="stylesheet">
-
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
   <link rel="stylesheet" href="./static/css/bulma.min.css">
-  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
-  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
-  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
-  <link rel="stylesheet"
-        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
-  <link rel="stylesheet" href="./static/css/index.css">
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script defer src="./static/js/fontawesome.all.min.js"></script>
-  <script src="./static/js/bulma-carousel.min.js"></script>
-  <script src="./static/js/bulma-slider.min.js"></script>
+  <link rel="stylesheet" href="Open-Sans.css">
+  <link rel="stylesheet" href="index.css">
+  <title></title>
+  <script defer="defer" src="./static/js/main.cb41f6a5.js"></script>
+  <link href="./static/css/main.4017e162.css" rel="stylesheet">
+  <meta name="description"
+        content="DiTalker: Fast and Expressive Audio-Driven Talking Face Generation with Dual Diffusion Transformers">
+  <title>DiTalker Project</title>
 </head>
+
 <body>
 
-<section class="hero">
-  <div class="hero-body" style="padding-bottom: 24px;">
-    <div class="container is-max-desktop">
-      <div class="columns is-centered">
-        <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">DiTalker: Fast and Expressive Audio-Driven Talking Face Generation with Dual
-            Diffusion Transformers</h1>
-          <div class="is-size-5 publication-authors">
-            <span class="author-block">
-              <a href="">Anonymous Authors</a></span>
-          </div>
+  <div id="root" class="column-flex">
+    <div id="title-flex" class="column-flex">
+      <h1> DiTalker: Fast and Expressive Audio-Driven Talking Face Generation with Dual Diffusion Transformers </h1>
+      <span>
+        <a target="_blank" href="" onclick="return false;">Anonymous&nbsp;Authors</a><sup>*</sup>,
+        
+        <br />
+      </span>
+      <span>Anonymous&nbsp;Institute</span>
+      <!-- <span><sup>*</sup>Equal contribution,<sup>†</sup>Project lead -->
+      </span>
+      <div class="flex flex-gap" style="margin-bottom:0.5em;">
+        <!-- <a target="_blank" href="" ><button>Paper</button></a> -->
+	      <a target="_blank" href="" onclick="alert('Coming Soon!');return false;"><button>Paper</button></a>
+        <a target="_blank" href="https://ditalker-lab.github.io/"><button>Page</button></a>
+      </div>
+      <small><span><b>TL;DR</b>: With recent advances in diffusion models, audio-driven talking face generation has witnessed remarkable progress in producing expressive and lifelike results. However, existing methods typically inherit fundamental techniques from pretrained text-to-image models, which results in redundant structures and noticeable visual artifacts. Besides, the high computation costs and slow inference speed of existing large-scale diffusion models impede their real-world applications. In this paper, we propose DiTalker, a fast and expressive diffusion transformer (DiT)-based talking face model to handle the above issues. Specifically, (1) we redesign an efficient network structure tailored for video generation, including a video Variational Autoencoder (VAE) and a 3D full attention transformer; we also adopt a context mask-based flow matching strategy to achieve better sample quality with fewer denoising steps; (2) we propose a LoRA-based self-distillation pipeline to support plug-and-play one-step denoising inference, which first speeds up the denoising process to 2$\times$ real-time; (3) we also propose an audio-to-landmark DiT for expressive audio-driven facial landmark generation. Experiments show that our DiTalker could generate expressive and lifelike talking face videos at a low computation cost, outperforming existing state-of-the-art methods regarding video quality and inference speed. Further visualization can be found at: <a href="https://ditalker.github.io">https://ditalker.github.io</a></span></small>
 
-          <!-- <div class="is-size-5 publication-authors">
-            <span class="author-block"><sup>1</sup>Paper under double blind review</span>
-          </div> -->
-          <div class="is-size-8 publication-authors">
-          </div>
-
-
-          <div class="column has-text-centered">
-            <div class="publication-links">
-              <!-- PDF Link. -->
-              <span class="link-block">
-                <a href=""
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="ai ai-arxiv"></i>
-                  </span>
-                  <span>Paper</span>
-                </a>
-              </span>
-            </div>
-          </div>
-        </div>
+      <div class='responsive-image-container'>
+        <img src='image/overall.png' alt='' />
       </div>
     </div>
-  </div>
-</section>
 
-
-
-
-
-
-
-<footer class="footer">
-  <div class="container">
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Licenses</h2>
-        <div class="content">
-          <p>
-            This website is licensed under a <a rel="license"
-                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
-            Commons Attribution-ShareAlike 4.0 International License</a>.
-          </p>
+    <div id="sections" class="column-flex">
+      <h3>Different Style Video Generation by DiTalker</h3>
+        <div class="video-slider">
+          <video src="video/VariousStyle/1.mp4"></video>
+          <video src="video/VariousStyle/2.mp4"></video>
+          <video src="video/VariousStyle/3.mp4"></video>
+          <video src="video/VariousStyle/4.mp4"></video>
         </div>
-      </div>
+        <div class="video-slider">
+          <video src="video/VariousStyle/5.mp4"></video>
+          <video src="video/VariousStyle/6.mp4"></video>
+          <video src="video/VariousStyle/7.mp4"></video>
+          <video src="video/VariousStyle/8.mp4"></video>
+        </div>
+
+
+      
+      <!-- <h3>BibTeX</h3>
+        <p>If you find this project useful for your research, you can cite us and check out our other related works:</p>
+        <pre><code>
+
+        </code></pre>  -->
+
+      <br/>
+      <br/>
+      <br/>
     </div>
   </div>
-</footer>
-
+  <script src="index.js"></script>
+  <script>
+    function comming_soon_click() {
+      alert('Comming soon!');
+    }
+    function TBD_click() {
+      alert('TBD');
+    }
+  </script>
 </body>
+
+
+
 </html>
