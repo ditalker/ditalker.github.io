@@ -21,18 +21,17 @@
     <div id="title-flex" class="column-flex">
       <h1> DiTalker: Fast and Expressive Audio-Driven Talking Face Generation with Dual Diffusion Transformers </h1>
       <span>
-        <a target="_blank" href="" onclick="return false;">Anonymous&nbsp;Authors</a><sup>*</sup>,
+        <a target="_blank" onclick="return false;">Anonymous&nbsp;Authors</a><sup>*</sup>,
         
         <br />
       </span>
       <span>Anonymous&nbsp;Institute</span>
       <!-- <span><sup>*</sup>Equal contribution,<sup>†</sup>Project lead -->
       </span>
-      <div class="flex flex-gap" style="margin-bottom:0.5em;">
-        <!-- <a target="_blank" href="" ><button>Paper</button></a> -->
-	      <a target="_blank" href="" onclick="alert('Coming Soon!');return false;"><button>Paper</button></a>
+      <!-- <div class="flex flex-gap" style="margin-bottom:0.5em;">
+        <a target="_blank" href="" ><button>Paper</button></a>
         <a target="_blank" href="https://ditalker-lab.github.io/"><button>Page</button></a>
-      </div>
+      </div> -->
       <small><span><b>TL;DR</b>: With recent advances in diffusion models, audio-driven talking face generation has witnessed remarkable progress in producing expressive and lifelike results. However, existing methods typically inherit fundamental techniques from pretrained text-to-image models, which results in redundant structures and noticeable visual artifacts. Besides, the high computation costs and slow inference speed of existing large-scale diffusion models impede their real-world applications. In this paper, we propose DiTalker, a fast and expressive diffusion transformer (DiT)-based talking face model to handle the above issues. Specifically, (1) we redesign an efficient network structure tailored for video generation, including a video Variational Autoencoder (VAE) and a 3D full attention transformer; we also adopt a context mask-based flow matching strategy to achieve better sample quality with fewer denoising steps; (2) we propose a LoRA-based self-distillation pipeline to support plug-and-play one-step denoising inference, which first speeds up the denoising process to 2$\times$ real-time; (3) we also propose an audio-to-landmark DiT for expressive audio-driven facial landmark generation. Experiments show that our DiTalker could generate expressive and lifelike talking face videos at a low computation cost, outperforming existing state-of-the-art methods regarding video quality and inference speed. Further visualization can be found at: <a href="https://ditalker.github.io">https://ditalker.github.io</a></span></small>
 
       <div class='responsive-image-container'>
